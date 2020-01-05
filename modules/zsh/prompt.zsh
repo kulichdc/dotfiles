@@ -9,7 +9,7 @@
 #   ___ time ___
     dotfiles_prompt_time=""
     dotfiles_prompt_time+="${DOTFILES_PROMPT_COMPONENT_LEFT}"
-    dotfiles_prompt_time+="$(ansi --no-newline --bold "%*")"
+    dotfiles_prompt_time+="$(ansi --no-newline --bold "%D{%Y%m%d_%H%M%S}")"
     dotfiles_prompt_time+="${DOTFILES_PROMPT_COMPONENT_RIGHT}"
 
     prompt_component_append "${dotfiles_prompt_time}"
